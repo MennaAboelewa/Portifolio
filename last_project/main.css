@@ -1,0 +1,106 @@
+
+h1{
+    text-align: center;
+    color: rgba(232, 22, 85, 0.88)
+}
+.about{
+    text-indent: 20px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#styleabout
+{
+    background-color: antiquewhite;
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 800px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+form {
+    background-color: antiquewhite;
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 800px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-size: large;
+  }
+input{
+        border-radius: 50px;
+  }
+h2{
+    text-align: center;
+    color: crimson;
+}
+  li{
+    text-decoration:none;
+    background-color: rgb(236, 145, 183);
+    color:#002e5b; 
+    font-size: large ; 
+    padding: 10px 120px; 
+    display:inline-block; 
+    
+  }
+
+.slide {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 60vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+    .slide1 {
+    background-image: url("c11.png");
+    }
+    .slide2 {
+    background-image: url("c22.png");
+    }
+    .slide3 {
+    background-image: url("c33.png");
+    }
+    .slide4 {
+    background-image: url("c44.png");
+    }
+    .slide5 {
+    background-image: url("c55.png");
+    }
+
+    .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 150%;
+    margin-top: -35px;
+    border-style: solid;
+    }
+    #arrow-left {
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 20px;
+    }
+    
+   #arrow-right {
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 20px;
+    }
+      

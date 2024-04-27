@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <h1>Menna's Website</h1>
+    <title>Document</title>
+</head>
+<body>
+    <div id="home">
+        <h1>Welcome To My Website</h1>
+    </div>
+    <ul>
+    <li><a href="#home" title="Go To Home Part ">Home</a></li>
+    <li><a href="#gallery" title=" Go To Gallery Part ">gallery</a></li>
+    <li><a href="#aboutme" title=" Go To About Me Part">About me</a></li>
+    <li><a href="#registration" title="Go To registration Part ">registration</a></li>
+    </ul>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
+        <div id="gallery">
+            <h2>Gallery</h2>
+            <div id="stylegallery">
+            <div id="arrow-left" class="arrow"></div>
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+            <div class="slide slide5"></div>
+            <div id="arrow-right" class="arrow"></div>
+        </div></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="aboutme">
+        <h2>About Me</h2>
+        <div id="styleabout">
+            <img src="menna.jpeg" alt="photo" width="250" height="300" style="float: left;">
+            <br><br><br><br>
+            <p class="about">  My Name Is <b>Menna Mohsen Ali</b> </p>
+            <p class="about">Student At Faculty Of Computers And Artificial Intelligence </p>
+            <p class="about">Sadat City University</p> 
+            <p class="about">Grade 2 </p>
+            <br><br><br><br><br>
+        </div></div>
+        
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        
+        <div id="registration">
+            <h2>Registration Form</h2>
+            <form action="thanks.html" method="post">
+                <label for="fname"> First Name </label>
+                <input type="text" id="fname" minlength="3" maxlength="15" pattern="[A-Za-z]+" title="must contain at least 3 characters and maximum 15 characters" required /> <br><br>
+
+                <label for="lname"> Last Name </label>
+                <input type="text" id="lname" minlength="3" maxlength="15" pattern="[A-Za-z]+" title="must contain at least 3 characters and maximum 15 characters " required /> <br><br>
+
+                <label for="username"> Username </label>
+                <input type="text" id="username"  required onkeyup="nospaces();" pattern=".{6,20}"title="must contain at least 6 characters and maximum 20 characters with no spaces " /><br><br>
+                <!--<input type="text" id="username"  required /> <br><br> 
+                (?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~'=?\|\]\[\(\)\-<>/]).{8,}-->
+
+                <label for="pass"> Password </label>
+                <input type="password" id="pass" required  pattern="(?=.*\d)(?=.*?[!@#$%^&*+`~'=?\|\]\[\(\)\-<>/]).{8,}" title="Must contain at least 8 or more characters with at least one number and one special character"/> <br><br>
+                
+                <label for="mail"> Email </label>
+                <input type="email" id="mail" required /> <br><br>
+
+                <label for="age"> age </label>
+                <input type="number" id="age" min="16" max="45" required /> <br><br>
+
+                <label for="country"> Country </label>
+                <select name="country" id="country" required>
+                    <option value="" >None</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Italy">Italy</option>
+                </select> <br><br>
+
+                <table>
+                    <tr><td rowspan="2">
+                    <label > Gender </label></td>
+                        <td>
+                            <input id="mal" type="radio" name="gender" value="Male" required>
+                            <label for="mal">Male</label></td></tr>  
+                    <tr><td>
+                            <input id="fem" type="radio" name="gender" value="Female"required>
+                            <label for="fem" >Female</label></td></tr>
+                </table> <br>
+
+                <label for="interest"> Interests </label>
+                <select name="interests" id="interest" multiple required>
+                    <option value="">None</option>
+                    <option value="Reading">Reading</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="running">Running</option>
+                    <option value="searching">Searching</option>
+                    <option value="games">Games</option>
+                    <option value="Drawing">Drawing</option>
+                </select> <br><br>
+
+                <label for="addr"> Address</label>
+                <input type="text" name="address" id="addr"required> <br><br><br>
+                <input type="submit" id="btn1" >
+            </form>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
